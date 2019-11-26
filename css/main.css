@@ -1,0 +1,657 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
+@font-face {
+    font-family: 'NanumSquare';
+    src: local('font/NanumSquare'),
+        url('../font/NanumSquareR.ttf'),
+        url('../font/NanumSquareR.eot'),
+        url('../font/NanumSquareR.woff');
+}
+@font-face {
+    font-family: 'NanumSquareL';
+    src: url('../font/NanumSquareL.ttf'),
+        url('../font/NanumSquareL.eot'),
+        url('../font/NanumSquareL.woff');
+}
+@font-face {
+    font-family: 'NanumSquareB';
+    src: url('../font/NanumSquareB.ttf'),
+        url('../font/NanumSquareB.eot'),
+        url('../font/NanumSquareB.woff');
+}
+@font-face {
+    font-family: 'NanumSquareEB';
+    src: url('../font/NanumSquareEB.ttf'),
+        url('../font/NanumSquareEB.eot'),
+        url('../font/NanumSquareEB.woff');
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    font-size: 14px;
+}
+header {
+    width: 100%;
+}
+
+header > #logo {
+    position: relative;
+    width: 1024px;
+    margin: 0 auto;
+}
+header > #logo > h1 {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+header > #logo > .three_menu {
+    position: absolute;
+    right: 0;
+    top: 75px;
+}
+header > #logo > .three_menu > p {
+    word-spacing: 5px;
+}
+
+nav {
+    margin-top: 5px;
+    width: 100%;
+    background-color: #1c1c1b;
+}
+nav > ul {
+    width: 1024px;
+    height: 40px;
+    margin: 0 auto;
+}
+nav > ul:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+nav > ul > li {
+    width: 256px;
+    height: 40px;
+    color: #f9f9f9;
+    line-height: 40px;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: 500;
+}
+nav > ul > li:nth-child(1):hover {
+    border-bottom: 5px solid #ea4b83;
+}
+nav > ul > li:nth-child(2):hover {
+    border-bottom: 5px solid #a774c1;
+}
+nav > ul > li:nth-child(3):hover {
+    border-bottom: 5px solid #f98a6c;
+}
+nav > ul > li:nth-child(4):hover {
+    border-bottom: 5px solid #00b050;
+}
+nav > ul > li a {
+    display: block;
+}
+/*
+nav > ul > li > .sub_menu {
+    display: none;
+}
+*/
+nav > ul > li > .sub_menu {
+    position: relative;
+    display: block;
+    width: 100%;
+    float: left;
+    background: #1c1c1b;
+    color: #f9f9f9;
+    z-index: 100;
+}
+nav > ul > li > .sub_menu > li:hover {
+    background: #f9f9f9;
+    color: #1c1c1b;
+}
+
+figure {
+    position: relative;
+    width: 100%;
+}
+figure > #slide {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+figure > #slide > ul {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 600px;
+}
+figure > #slide > ul:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+figure > #slide > ul > li {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+}
+figure > #slide > ul > li > a {
+    display: block;
+    text-indent: -9999px;
+}
+figure > #slide > ul > li:nth-child(1) {
+    background: url(../images/main_slide1.jpg) 50% 0 no-repeat;
+    left: 0px;
+    background-size: contain;
+}
+figure > #slide > ul > li:nth-child(2) {
+    background: url(../images/main_slide2.jpg) 50% 0 no-repeat;
+    left: 100%;
+    background-size: contain;
+}
+figure > #slide > ul > li:nth-child(3) {
+    background: url(../images/main_slide3.jpg) 50% 0 no-repeat;
+    left: 200%;
+    background-size: contain;
+}
+
+#slide_Btn ul:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+#slide_Btn li {
+    background: url("../images/slide_Btn.png") 0 -16px no-repeat;
+    width: 14px;
+    height: 15px;
+    float: left;
+    position: relative;
+    left: 48.5%;
+    top: -40px;
+    overflow: hidden;
+    margin: 0 5px;
+    cursor: pointer;
+}
+#slide_Btn li.on {
+    background-position: 0 0;
+}
+#slide_Btn li a {
+    display: block;
+    text-indent: -999px;
+}
+
+#content1 {
+    margin:0 auto; 
+    width: 1024px;
+    position: relative;
+}
+#content1 > h2 {
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    font-size: 40px; 
+    position: absolute;
+    top: 80px;
+    left: 40%;
+}
+#content1 > .gray_bg {
+    background-color: #efeeee;
+    width: 250px;
+    height: 20px;
+    position: absolute;
+    top: 105px;
+    left: 40%;
+    z-index: -9999;
+}
+
+section {
+    position: relative;
+    padding-top: 240px;
+    width: 1024px;
+    margin: 0 auto;
+}
+section:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+section > article {
+    display: block;
+    width: 310px;
+    height: 310px;
+    float: left;
+    padding-left: 15px;
+    padding-top: 210px;
+    opacity: 0.85;
+}
+section > article > a {
+    display: block;
+}
+section > article > a > h3 {
+    color: #f9f9f9;
+    font-size: 30px;
+    font-weight: 500;
+}
+section > article:hover {
+    opacity: 1;
+    transform:scale(1.1);
+    transition: all 0.5s;
+}
+/*
+section > article:hover:after {
+      이미지 안쪽으로 그림자 효과 주기 
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 500px rgba(0, 0, 0, 0), inset 0 0 100px rgba(0, 0, 0, 0);
+}
+*/
+section > article > a > p {
+    font-family: "NanumSquare";
+    color: #f9f9f9;
+    font-size: 16px;
+    line-height: 21px;
+}
+section > article:nth-child(1) {
+    background-image: url(../images/hairChart1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+section > article:nth-child(2) {
+    background-image: url(../images/hairNote1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    margin-left: 47px;
+}
+section > article:nth-child(3) {
+    background-image: url(../images/styleNote1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    margin-left: 47px;
+}
+
+#content2 {
+    position: relative;
+    margin-top: 100px;
+    z-index: 100;
+}
+#content2 > .youtube {
+    position: relative;
+    width: 52%;
+    top: 0;
+}
+
+#content2 > .youtube > iframe {
+    position: absolute;
+    margin-top: 280px;
+    border: 7px solid #f98a6c;
+    right: 0;
+}
+#content2 > .c2_bg {
+    position: absolute;
+    height: 900px;
+    top:0;
+    right: 0;
+    width: 55%;
+    background-color: #efeeee;
+    z-index: -9999;
+}
+#content2 > .c2_bg > .c2_text {
+    padding-left: 250px;
+    padding-top: 200px;
+}
+#content2 > .c2_bg > .c2_text > h2 {
+    color: #f98a6c;
+    font-size: 40px;
+}
+#content2 > .c2_bg > .c2_text > h2:after {
+    position: absolute;
+    display: block;
+    content: "";
+    left: 250px;
+    width: 8%;
+    height: 3%;
+    border-bottom: 2px solid #1c1c1b;
+}
+#content2 > .c2_bg > .c2_text > span {
+    font-family: "NanumSquareEB";
+    font-size: 25px;
+    margin: 60px 0;
+    display: block;
+}
+#content2 > .c2_bg > .c2_text > p {
+    font-family: "NanumSquare";
+    font-size: 17px;
+    margin-bottom: 80px;
+    line-height: 30px;
+}
+#content2 > .c2_bg > .c2_btn {
+    font-family: "NanumSquare";
+    width: 110px;
+    height: 45px;
+    border-radius: 50px;
+    line-height: 45px;
+    background-color: #f98a6c;
+    margin-left: 600px;
+}
+#content2 > .c2_bg > .c2_btn > p > a {
+    display: block;
+    font-size: 15px;
+    text-align: center;
+}
+#content2 > .c2_bg > .c2_btn > p > a:hover {
+    background-color: #1c1c1b;
+    color: #f98a6c;
+    border-radius: 50px;
+}
+#banner {
+    height: 191px;
+    position: relative;
+    margin-top: 1100px;
+    background-image: url(../images/movieBanner_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#banner > img {
+    display: block;
+    margin: 0 auto;
+    width: 1024px;
+}
+
+#content3 {
+    font-family: "NanumSquare";
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+#content3:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+#content3 > .c3_left {
+    width: 58%;
+    float: left;
+}
+#content3 > .c3_left > h2 {
+    font-family: "Poppins", sans-serif;
+    margin: 150px 150px 0;
+    font-size: 40px;
+}
+#content3 > .c3_left > h2:after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 174px;
+    left: 135px;
+    width: 320px;
+    height: 20px;
+    background-color: #efeeee;
+    z-index: -9999;
+}
+#content3 > .c3_left > span:before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 33%;
+    left: 29%;
+    height: 45px;
+    border-left: 2px solid #1c1c1b;
+}
+#content3 > .c3_left > span {
+    display: block;
+    text-align: center;
+    font-size: 23px;
+    margin-top: 100px;
+}
+#content3 > .c3_left > p {
+    width: 56%;
+    text-align: center;
+    font-size: 16px;
+    margin: 30px auto;
+}
+#content3 > .c3_left > .button {
+    width: 120px;
+    border: 2px solid #1c1c1b;
+    border-radius: 50px;
+    margin-top: 75px;
+}
+#content3 > .c3_left > .button > a {
+    display: block;
+    line-height: 40px;
+    border-radius: 50px;
+}
+#content3 > .c3_left > .button > a:hover {
+    background-color: #1c1c1b;
+    color: #f9f9f9;
+}
+#content3 > .c3_right {
+    width: 40%;
+    float: right;
+    margin-top: 25%;
+    padding-left: 5%;
+}
+#content3 > .c3_left > p:after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 174px;
+    left: 60%;
+    width: 230px;
+    height: 400px;
+    background-color: #efeeee;
+    z-index: -100;
+}
+#content3 > .c3_right > img {
+    filter:drop-shadow(0px 5px 5px #1c1c1b);
+}
+#content3 > .c3_leftBtn {
+    width: 16px;
+    height: 20px;
+    position: absolute;
+    top: 56%;
+    left: 0;
+    cursor: pointer;
+}
+#content3 > .c3_rightBtn {
+    width: 16px;
+    height: 20px;
+    position: absolute;
+    top: 56%;
+    right: 0;
+    cursor: pointer;
+}
+
+#instagram {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 200px;
+}
+#instagram > .insta_title {
+    margin: 0 auto;
+}
+#instagram > .insta_title > h2 {
+    text-align: center;
+  font-size: 40px;
+  background: linear-gradient(to right, #ea4b83 33%, #a774c1 45%, #f98a6c 55%, #00b050 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#instagram > .insta_title > h2:after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 24px;
+    left: 32.8%;
+    width: 350px;
+    height: 20px;
+    background-color: #efeeee;
+    z-index: -100;
+}
+#instagram > .insta_title > p {
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+}
+#instagram > .insta_title:after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 140px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    border-bottom: 2px solid #1c1c1b;
+}
+#instagram > .insta_img {
+    margin-top: 90px;
+    width: 1024px;
+    position: relative;
+}
+#instagram > .insta_img:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+#instagram > .insta_img > a > img {
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+#instagram > .insta_img > a{
+    position:relative;
+    float:left;
+/*
+    transition: width 2s;
+    -webkit-transition: width 2s;
+*/
+}
+#instagram > .insta_img > a:before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 30px;
+    width: 300px;
+    height: 300px;
+    display:block;
+}
+#instagram > .insta_img > a:hover:before {
+    position: absolute;
+    display: block;
+    content: "";
+    text-align: center;
+    color: #f9f9f9;
+    line-height: 300px;
+    font-size: 30px;
+    top: 0;
+    left: 30px;
+    width: 300px;
+    height: 300px;
+    box-shadow: inset 0 0 500px rgba(0, 0, 0, 0.8), inset 0 0 200px rgba(0, 0, 0, 0.8);
+    transition: all 0.5s;
+}
+#instagram > .insta_img > a:nth-child(1):hover:before {
+    content: "@mintyuri";
+}
+#instagram > .insta_img > a:nth-child(2):hover:before {
+    content: "@u.b1n";
+}
+#instagram > .insta_img > a:nth-child(3):hover:before {
+    content: "@shubidub";
+}
+#instagram > .insta_img > a:nth-child(4):hover:before {
+    content: "@lee___yujini";
+}
+#instagram > .insta_img > a:nth-child(5):hover:before {
+    content: "@94danmie";
+}
+#instagram > .insta_img > a:nth-child(6):hover:before {
+    content: "@2_58.am";
+}
+footer {
+    width: 100%;
+    background-color: #1c1c1b;
+    color: #f9f9f9;
+    margin-top: 80px;
+}
+footer > .footer {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+footer > .footer:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+footer > .footer > p {
+    font-family: "NanumSquare";
+    font-size: 14px;
+    line-height: 100px;
+    width: 68%;
+    float: left;
+}
+footer > .footer > address {
+    width: 51%;
+    float: left;
+    font-style: normal;
+    font-family: "NanumSquare";
+    font-size: 14px;
+    line-height: 20px;
+}
+footer > .footer > img {
+    float: right;
+    width: 130px;
+    height: 100px;
+    margin-right: 100px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+footer > .footer > select {
+    width: 130px;
+    height: 30px;
+    background-color: #1c1c1b;
+    color: #f9f9f9;
+    font-size: 12px;
+    margin-top: 100px;
+    margin-left: -100px;
+}
+
+#gotoTop {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 270px;
+    right: 50px;
+    border: 0;
+    background: none;
+    z-index: 999;
+    display: none;
+}
+#gotoBottom {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 210px;
+    right: 50px;
+    border: 0;
+    background: none;
+    z-index: 999;
+    display: none;
+}
