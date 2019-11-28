@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>미쟝센 > Event&amp;News > Notice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/notice.css">
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    
+    <script>
+        $(document).ready(function(){
+           $("header").load("header.html");
+            $("footer").load("footer.html");
+            
+            
+        var i=0;
+        $(".n1").show();
+        $(".num_1").addClass("onClick");
+        $(".num_2").removeClass("onClick");
+        $(".num_3").removeClass("onClick");
+        $(".num_4").removeClass("onClick");
+        $(".n2").hide();
+        $(".n3").hide();
+        $(".n4").hide();
+        
+        $(".front").click(function(e){
+            i = 0;
+            e.preventDefault();
+            $(".n1").show();
+            $(".num_1").addClass("onClick");
+            $(".num_2").removeClass("onClick");
+            $(".num_3").removeClass("onClick");
+            $(".num_4").removeClass("onClick");
+            $(".n2").hide();
+            $(".n3").hide();
+            $(".n4").hide();
+        });
+        
+        $(".prev").click(function(e){
+            e.preventDefault();
+            switch(i){
+                case 1:
+                    i = 0;
+                    $(".n1").show();
+                    $(".num_1").addClass("onClick");
+                    $(".num_2").removeClass("onClick");
+                    $(".num_3").removeClass("onClick");
+                    $(".num_4").removeClass("onClick");
+                    $(".n2").hide();
+                    $(".n3").hide();
+                    $(".n4").hide();
+                    break;
+                case 2:
+                    i = 1;
+                    $(".n2").show();
+                    $(".num_2").addClass("onClick");
+                    $(".num_1").removeClass("onClick");
+                    $(".num_3").removeClass("onClick");
+                    $(".num_4").removeClass("onClick");
+                    $(".n1").hide();
+                    $(".n3").hide();
+                    $(".n4").hide();
+                    break;
+                case 3:
+                    i = 2;
+                    $(".n3").show();
+                    $(".num_3").addClass("onClick");
+                    $(".num_1").removeClass("onClick");
+                    $(".num_2").removeClass("onClick");
+                    $(".num_4").removeClass("onClick");
+                    $(".n1").hide();
+                    $(".n2").hide();
+                    $(".n4").hide();
+                    break;
+                case 4:
+                    i = 3;
+                    $(".n4").show();
+                    $(".num_4").addClass("onClick");
+                    $(".num_1").removeClass("onClick");
+                    $(".num_2").removeClass("onClick");
+                    $(".num_3").removeClass("onClick");
+                    $(".n1").hide();
+                    $(".n2").hide();
+                    $(".n3").hide();
+                    break;
+            }
+                    
+        });
+        
+        $(".num_1").click(function(e){
+            e.preventDefault();
+            i = 0;
+            $(".n1").show();
+            $(".num_1").addClass("onClick");
+            $(".num_2").removeClass("onClick");
+            $(".num_3").removeClass("onClick");
+            $(".num_4").removeClass("onClick");
+            $(".n2").hide();
+            $(".n3").hide();
+            $(".n4").hide();
+        });
+        $(".num_2").click(function(e){
+            e.preventDefault();
+            i = 1;
+            $(".n2").show();
+            $(".num_2").addClass("onClick");
+            $(".num_1").removeClass("onClick");
+            $(".num_3").removeClass("onClick");
+            $(".num_4").removeClass("onClick");
+            $(".n1").hide();
+            $(".n3").hide();
+            $(".n4").hide();
+        });
+        $(".num_3").click(function(e){
+            e.preventDefault();
+            i = 2;
+            $(".n3").show();
+            $(".num_3").addClass("onClick");
+            $(".num_1").removeClass("onClick");
+            $(".num_2").removeClass("onClick");
+            $(".num_4").removeClass("onClick");
+            $(".n1").hide();
+            $(".n2").hide();
+            $(".n4").hide();
+        });
+        $(".num_4").click(function(e){
+            e.preventDefault();
+            i = 3;
+            $(".n4").show();
+            $(".num_4").addClass("onClick");
+            $(".num_1").removeClass("onClick");
+            $(".num_2").removeClass("onClick");
+            $(".num_3").removeClass("onClick");
+            $(".n1").hide();
+            $(".n2").hide();
+            $(".n3").hide();
+        });
+        
+        $(".next").click(function(e){
+            e.preventDefault();
+            switch(i){
+                case 0:
+                    i = 1;
+                    $(".n2").show();
+                    $(".num_2").addClass("onClick");
+                    $(".num_1").removeClass("onClick");
+                    $(".num_3").removeClass("onClick");
+                    $(".num_4").removeClass("onClick");
+                            $(".n1").hide();
+                    $(".n3").hide();
+                    $(".n4").hide();
+                    break;
+                case 1:
+                    i = 2;
+                    $(".n3").show();
+                    $(".num_3").addClass("onClick");
+                    $(".num_1").removeClass("onClick");
+                    $(".num_2").removeClass("onClick");
+                    $(".num_4").removeClass("onClick");
+                            $(".n1").hide();
+                    $(".n2").hide();
+                    $(".n4").hide();
+                    break;
+                case 2:
+                    i = 3;
+                    $(".n4").show();
+                    $(".num_4").addClass("onClick");
+                    $(".num_1").removeClass("onClick");
+                    $(".num_2").removeClass("onClick");
+                    $(".num_3").removeClass("onClick");
+                            $(".n1").hide();
+                    $(".n2").hide();
+                    $(".n3").hide();
+                    break;
+            }
+                    
+        });
+        
+        $(".back").click(function(e){
+            i = 3;
+            e.preventDefault();
+            $(".n4").show();
+            $(".num_4").addClass("onClick");
+            $(".num_1").removeClass("onClick");
+            $(".num_2").removeClass("onClick");
+            $(".num_3").removeClass("onClick");
+            $(".n1").hide();
+            $(".n2").hide();
+            $(".n3").hide();
+        });
+            
+            
+        });
+    </script>
+</head>
+<body>
+    <header></header>
+    
+    <div id="location">
+        <a href="main.html">Home</a> > <a href="notice.html">Event &amp; News</a> > <strong>Notice</strong> 
+    </div>
+    
+    
+    <figure>
+        <div class="figure_text">
+            <h2>Warm and New Notice</h2>
+        </div>
+    </figure>
+    
+    <section>
+        <div id="notice">
+        
+        
+                <div class="searchbox">
+    				<form action="post" class="searcharea">
+    					<fieldset>
+    						<legend>게시물검색</legend>
+    						<select name="select1" id="select1" class="selectbox">
+    							<option value>전체</option>
+    							<option value="1">제목</option>
+    							<option value="2">내용</option>
+    						</select>
+    						<input type="text" class="text" title="검색어" placeholder="검색어를 입력하세요.">
+    						<i class="fa fa-search"></i>
+    					</fieldset>
+    				</form>
+    			</div>
+    			
+    			<table class="news n1">
+    				<thead>
+    					<tr>
+    						<td class="hnumber">NO</td>
+    						<td class="hname">제목</td>
+    						<td class="hdate">작성일</td>
+    					</tr>
+    				</thead>
+    				<tbody>
+    					<tr>
+    						<td class="number">40</td>
+    						<td class="name">미쟝센 X 올리브영 가상 체험 이벤트 당첨자 발표</td>
+    						<td class="date">2019-11-11</td>
+    					</tr>
+    					<tr>
+    						<td class="number">39</td>
+    						<td class="name">미쟝센 퍼펙트세럼 샴푸 샘플발송 지연 및 추후 일정 변경 안내</td>
+    						<td class="date">2019-11-05</td>
+    					</tr>
+    					<tr>
+    						<td class="number">38</td>
+    						<td class="name">미쟝센 퍼펙트세럼 샴푸 뷰티테스터 당첨자 발표일 변경 안내</td>
+    						<td class="date">2019-10-19</td>
+    					</tr>
+    					<tr>
+    						<td class="number">37</td>
+    						<td class="name">미쟝센 라이킷헤어몰 커머스기능 이전 안내</td>
+    						<td class="date">2019-10-18</td>
+    					</tr>
+    					<tr>
+    						<td class="number">36</td>
+    						<td class="name">네이버 갓벤트 '린스vs트리트먼트vs헤어팩' 댓글 이벤트 당첨자 발표</td>
+    						<td class="date">2019-10-07</td>
+    					</tr>
+    					<tr>
+    						<td class="number">35</td>
+    						<td class="name">네이버 갓벤트 '트위스트 로우 포니테일' 댓글 이벤트 당첨자 발표</td>
+    						<td class="date">2019-10-01</td>
+    					</tr>
+    					<tr>
+    						<td class="number">34</td>
+    						<td class="name">미쟝센 라이킷헤어 출첵 미션 이벤트 종료 안내문</td>
+    						<td class="date">2019-09-28</td>
+    					</tr>
+    					<tr>
+    						<td class="number">33</td>
+    						<td class="name">회원 가입 / 뷰티포인트 관련 서비스 일시 중단 안내</td>
+    						<td class="date">2019-09-25</td>
+    					</tr>
+    					<tr>
+    						<td class="number">32</td>
+    						<td class="name">미쟝센 라이킷헤어 헬로버블 컬러플크루 이벤트 당첨자 발표</td>
+    						<td class="date">2019-09-21</td>
+    					</tr>
+    					<tr>
+    						<td class="number">31</td>
+    						<td class="name">네이버 갓벤트 '리:본드 트리트먼트' 이벤트 당첨자 발표</td>
+    						<td class="date">2019-09-20</td>
+    					</tr>
+    				</tbody>
+    			</table>
+    			
+    			<table class="news n2">
+    				<thead>
+    					<tr>
+    						<td class="hnumber">NO</td>
+    						<td class="hname">제목</td>
+    						<td class="hdate">작성일</td>
+    					</tr>
+    				</thead>
+    				<tbody>
+    					<tr>
+    						<td class="number">30</td>
+    						<td class="name">미쟝센 샤이닝에센스 뷰티테스터 베스트후기 모집 기간 연장 안내</td>
+    						<td class="date">2019-09-18</td>
+    					</tr>
+    					<tr>
+    						<td class="number">29</td>
+    						<td class="name">미쟝센 라이킷헤어 출첵이벤트 참여방법 변경 안내</td>
+    						<td class="date">2019-09-16</td>
+    					</tr>
+    					<tr>
+    						<td class="number">28</td>
+    						<td class="name">미쟝센 라이킷헤어몰 커머스기능 통합 안내</td>
+    						<td class="date">2019-09-15</td>
+    					</tr>
+    					<tr>
+    						<td class="number">27</td>
+    						<td class="name">네이버 포스트 19FW 트렌드 헤어 댓글 이벤트 당첨자 발표</td>
+    						<td class="date">2019-9-28</td>
+    					</tr>
+    					<tr>
+    						<td class="number">26</td>
+    						<td class="name">서비스 점검 안내</td>
+    						<td class="date">2019-09-27</td>
+    					</tr>
+    					<tr>
+    						<td class="number">25</td>
+    						<td class="name">-미쟝센 X 걸스데이- PERFECT STAGE MV 퀴즈 이벤트 당첨자 발표일 변경 안내</td>
+    						<td class="date">2019-09-26</td>
+    					</tr>
+    					<tr>
+    						<td class="number">24</td>
+    						<td class="name">31살롱 이벤트 당첨자 발표일 변경 안내</td>
+    						<td class="date">2019-09-25</td>
+    					</tr>
+    					<tr>
+    						<td class="number">23</td>
+    						<td class="name">걸스데이 비하인드 MV 제목 짓기 이벤트 당첨자 발표</td>
+    						<td class="date">2019-09-24</td>
+    					</tr>
+    					<tr>
+    						<td class="number">22</td>
+    						<td class="name">미쟝센, ‘2017 S/S 헤라 서울패션위크’ 헤어룩 연출</td>
+    						<td class="date">2019-09-23</td>
+    					</tr>
+    					<tr>
+    						<td class="number">21</td>
+    						<td class="name">9월 월간 미쟝센 당첨자 발표</td>
+    						<td class="date">2019-09-12</td>
+    					</tr>
+    				</tbody>
+    			</table>
+    			
+    			<table class="news n3">
+    				<thead>
+    					<tr>
+    						<td class="hnumber">NO</td>
+    						<td class="hname">제목</td>
+    						<td class="hdate">작성일</td>
+    					</tr>
+    				</thead>
+    				<tbody>
+    					<tr>
+    						<td class="number">20</td>
+    						<td class="name">미쟝센, 걸스데이와 함께한 ‘퍼펙트 스테이지’ 뮤직비디오 공개</td>
+    						<td class="date">2019-08-15</td>
+    					</tr>
+    					<tr>
+    						<td class="number">19</td>
+    						<td class="name">손상 헤어 극복 프로젝트! 이벤트 기프티콘 발송일 변경 안내</td>
+    						<td class="date">2019-08-11</td>
+    					</tr>
+    					<tr>
+    						<td class="number">18</td>
+    						<td class="name">올리브영 영수증 응모권 이벤트 경품 배송 지연 안내</td>
+    						<td class="date">2019-08-05</td>
+    					</tr>
+    					<tr>
+    						<td class="number">17</td>
+    						<td class="name">미쟝센, ‘스테이지 콜렉션’ 라인 출시</td>
+    						<td class="date">2019-08-03</td>
+    					</tr>
+    					<tr>
+    						<td class="number">16</td>
+    						<td class="name">뷰티포인트 정책 변경으로 인한 공지사항</td>
+    						<td class="date">2019-08-01</td>
+    					</tr>
+    					<tr>
+    						<td class="number">15</td>
+    						<td class="name">미쟝센, ‘에너지 밤’ 샴푸 3종 출시</td>
+    						<td class="date">2019-07-23</td>
+    					</tr>
+    					<tr>
+    						<td class="number">14</td>
+    						<td class="name">올리브영 영수증 응모권 이벤트 당첨자 발표일 변경 안내</td>
+    						<td class="date">2019-07-17</td>
+    					</tr>
+    					<tr>
+    						<td class="number">13</td>
+    						<td class="name">미쟝센 웹사이트 점검 안내</td>
+    						<td class="date">2019-07-14</td>
+    					</tr>
+    					<tr>
+    						<td class="number">12</td>
+    						<td class="name">미쟝센, ‘크리스탈 쥬얼’ 샴푸∙린스 3종 및 ‘블렌딩 미스트 세럼’ 3종 출시</td>
+    						<td class="date">2019-07-13</td>
+    					</tr>
+    					<tr>
+    						<td class="number">11</td>
+    						<td class="name">미쟝센 ‘헬로 버블 폼 컬러’ 리뉴얼 출시</td>
+    						<td class="date">2019-07-02</td>
+    					</tr>
+    				</tbody>
+    			</table>
+    			
+    			<table class="news n4">
+    				<thead>
+    					<tr>
+    						<td class="hnumber">NO</td>
+    						<td class="hname">제목</td>
+    						<td class="hdate">작성일</td>
+    					</tr>
+    				</thead>
+    				<tbody>
+    					<tr>
+    						<td class="number">10</td>
+    						<td class="name">[공지] 파워스윙 헤어세이프 뷰티테스터 기간 변경 안내</td>
+    						<td class="date">2019-06-11</td>
+    					</tr>
+    					<tr>
+    						<td class="number">9</td>
+    						<td class="name">퍼펙트 세럼 샴푸 베스트 후기 당첨자 발표 지연 안내</td>
+    						<td class="date">2019-06-10</td>
+    					</tr>
+    					<tr>
+    						<td class="number">8</td>
+    						<td class="name">NEW 미쟝센 퍼펙트 세럼 샴푸 출시 기념 이벤트 응모 안내</td>
+    						<td class="date">2019-05-09</td>
+    					</tr>
+    					<tr>
+    						<td class="number">7</td>
+    						<td class="name">미쟝센, 3045 그루밍족 겨냥한 ‘파워스윙’ 라인 리뉴얼 출시</td>
+    						<td class="date">2019-05-02</td>
+    					</tr>
+    					<tr>
+    						<td class="number">6</td>
+    						<td class="name">네이버 포스트 갓벤트 '퍼펙트 세럼' 체험단 후기 이벤트 당첨자 발표	</td>
+    						<td class="date">2019-04-27</td>
+    					</tr>
+    					<tr>
+    						<td class="number">5</td>
+    						<td class="name">미쟝센 X G마켓 기획전 인스타그램 이벤트 당첨자 발표</td>
+    						<td class="date">2019-04-16</td>
+    					</tr>
+    					<tr>
+    						<td class="number">4</td>
+    						<td class="name">[공지] 뷰티테스터 베스트 후기 당첨자 발표일 변경 안내</td>
+    						<td class="date">2019-04-15</td>
+    					</tr>
+    					<tr>
+    						<td class="number">3</td>
+    						<td class="name">미쟝센, ‘국민세럼’ 퍼펙트 세럼 3종 확장 출시</td>
+    						<td class="date">2019-04-04</td>
+    					</tr>
+    					<tr>
+    						<td class="number">2</td>
+    						<td class="name">[공지] 뷰티테스터 체험후기 작성기간 변경 안내</td>
+    						<td class="date">2019-03-12</td>
+    					</tr>
+    					<tr>
+    						<td class="number">1</td>
+    						<td class="name">Like it hair 사이트 접속 제한 관련 공지사항입니다.</td>
+    						<td class="date">2019-03-02</td>
+    					</tr>
+    				</tbody>
+    			</table>
+    			
+    			
+    			
+    			
+    			<div class="page_num">
+    				<a href="#" class="front">
+    				</a>
+    				<a href="#" class="prev">
+    				</a>
+    				<a href="#" class="num_1">1</a>
+    				<a href="#" class="num_2">2</a>
+    				<a href="#" class="num_3">3</a>
+    				<a href="#" class="num_4">4</a>
+    				<a href="#" class="next">
+    				</a>
+    				<a href="#" class="back">
+    				</a>
+    			</div>
+    		</div>
+
+    </section>
+    
+    
+    <footer></footer>
+    
+    <button id="gotoTop"><img src="images/top.png" alt=""></button>
+    <button id="gotoBottom"><img src="images/bottom.png" alt=""></button>
+    
+</body>
+</html>
