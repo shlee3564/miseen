@@ -1,0 +1,114 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
+@font-face {
+    font-family: 'NanumSquare';
+    src: local('font/NanumSquare'),
+        url('../font/NanumSquareR.ttf'),
+        url('../font/NanumSquareR.eot'),
+        url('../font/NanumSquareR.woff');
+}
+@font-face {
+    font-family: 'NanumSquareL';
+    src: url('../font/NanumSquareL.ttf'),
+        url('../font/NanumSquareL.eot'),
+        url('../font/NanumSquareL.woff');
+}
+@font-face {
+    font-family: 'NanumSquareB';
+    src: url('../font/NanumSquareB.ttf'),
+        url('../font/NanumSquareB.eot'),
+        url('../font/NanumSquareB.woff');
+}
+@font-face {
+    font-family: 'NanumSquareEB';
+    src: url('../font/NanumSquareEB.ttf'),
+        url('../font/NanumSquareEB.eot'),
+        url('../font/NanumSquareEB.woff');
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    font-size: 14px;
+}
+header {
+    width: 100%;
+}
+
+header > #logo {
+    position: relative;
+    width: 1024px;
+    margin: 0 auto;
+}
+header > #logo > h1 {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+header > #logo > .three_menu {
+    position: absolute;
+    right: 0;
+    top: 75px;
+}
+header > #logo > .three_menu > p {
+    word-spacing: 5px;
+}
+
+nav {
+    margin-top: 5px;
+    width: 100%;
+    background-color: #1c1c1b;
+}
+nav > ul {
+    width: 1024px;
+    height: 40px;
+    margin: 0 auto;
+}
+nav > ul:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+nav > ul > li {
+    width: 256px;
+    height: 40px;
+    color: #f9f9f9;
+    line-height: 40px;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: 500;
+}
+nav > ul > li:nth-child(1):hover {
+    border-bottom: 5px solid #ea4b83;
+}
+nav > ul > li:nth-child(2):hover {
+    border-bottom: 5px solid #a774c1;
+}
+nav > ul > li:nth-child(3):hover {
+    border-bottom: 5px solid #f98a6c;
+}
+nav > ul > li:nth-child(4):hover {
+    border-bottom: 5px solid #00b050;
+}
+nav > ul > li a {
+    display: block;
+}
+/*
+nav > ul > li > .sub_menu {
+    display: none;
+}
+*/
+nav > ul > li > .sub_menu {
+    position: relative;
+    display: block;
+    width: 100%;
+    float: left;
+    background: #1c1c1b;
+    color: #f9f9f9;
+    z-index: 100;
+}
+nav > ul > li > .sub_menu > li:hover {
+    background: #f9f9f9;
+    color: #1c1c1b;
+}
