@@ -1,0 +1,162 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
+@font-face {
+    font-family: 'NanumSquare';
+    src: local('font/NanumSquare'),
+        url('../font/NanumSquareR.ttf'),
+        url('../font/NanumSquareR.eot'),
+        url('../font/NanumSquareR.woff');
+}
+@font-face {
+    font-family: 'NanumSquareL';
+    src: url('../font/NanumSquareL.ttf'),
+        url('../font/NanumSquareL.eot'),
+        url('../font/NanumSquareL.woff');
+}
+@font-face {
+    font-family: 'NanumSquareB';
+    src: url('../font/NanumSquareB.ttf'),
+        url('../font/NanumSquareB.eot'),
+        url('../font/NanumSquareB.woff');
+}
+@font-face {
+    font-family: 'NanumSquareEB';
+    src: url('../font/NanumSquareEB.ttf'),
+        url('../font/NanumSquareEB.eot'),
+        url('../font/NanumSquareEB.woff');
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    font-size: 14px;
+}
+
+#location {
+    line-height: 50px;
+    padding-left: 5%;
+    word-spacing: 5px;
+    border-bottom: 1px solid #1c1c1b;
+}
+
+
+figure {
+    max-width: 1024px;
+    margin: 0 auto;
+    height: 500px;
+    position: relative;
+    background: url(../images/login.png) center no-repeat;
+    background-size: cover;
+}
+figure > .figure_text {
+    text-align: center;
+    color: #f9f9f9;
+    font-size: 35px;
+    font-style: italic;
+    padding-top: 220px;
+    letter-spacing: 2px;
+}
+
+
+section {
+    max-width: 1024px;
+    margin: 100px auto 0 auto;
+    position: relative;
+}
+
+
+#login_box {
+    font-family: "NanumSquare";
+    max-width: 800px;
+    margin: 0 auto 80px auto;
+    position: relative;
+    border: 1px solid #bbb;
+}
+#login_box:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+form {
+    max-width: 600px;
+    position: relative;
+    margin: 0 auto;
+    padding: 70px 0 60px 0;
+}
+form > .login_text > span {
+    width: 70px;
+    display: inline-block;
+    line-height: 50px;
+}
+form > .login_text > input[type="text"] {
+    width: 65%;
+    height: 40px;
+    text-indent: 1vw;
+}
+form > input[type="button"] {
+    position: absolute;
+    width: 110px;
+    height: 90px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #f9f9f9;
+    background: #1c1c1b;
+    border: 0;
+    right: 3%;
+    top: 75px;
+}
+form > input[type="checkbox"] {
+    margin-top: 20px;
+    margin-left: 70px;
+}
+form > span {
+    font-size: 15px;
+    color: #1c1c1b;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+form > a {
+    display: inline-block;
+    margin-left: 175px;
+    font-size: 15px;
+    text-decoration: underline;
+    color: #1c1c1b;
+    font-weight: bold;
+}
+
+.login_help {
+    width: 100%;
+    padding: 50px;
+    border-top: 1px solid #bbb;
+}
+.login_help:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.login_help > span {
+    font-size: 23px;
+    color: #424242;
+    font-weight: bold;
+}
+.login_help > p {
+    width: 80%;
+    margin: 15px 0;
+    font-size: 16px;
+    line-height: 28px;
+}
+.login_help > a {
+    font-family: "NanumSquareB";
+    display: block;
+    float: right;
+    width: 180px;
+    height: 50px;
+    _background: #1c1c1b;
+    border: 1px solid #1c1c1b;
+    color: #1c1c1b;
+    line-height: 50px;
+    text-align: center;
+    font-size: 17px;
+}
+

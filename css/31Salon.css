@@ -135,14 +135,16 @@ article > .six {
     left: 0;
     width: 43px;
     height: 37px;
-    background: #ead24b;
+    background: #00b050;
     color:#fff;
 }
 .episode > .two > .img:before {
     content: '2';
+    background: #f98a6c;
 }
 .episode > .three > .img:before {
     content: '3';
+    background: #a774c1;
 }
 .box > .text {
     padding: 20px;

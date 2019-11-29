@@ -1,0 +1,185 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
+@font-face {
+    font-family: 'NanumSquare';
+    src: local('font/NanumSquare'),
+        url('../font/NanumSquareR.ttf'),
+        url('../font/NanumSquareR.eot'),
+        url('../font/NanumSquareR.woff');
+}
+@font-face {
+    font-family: 'NanumSquareL';
+    src: url('../font/NanumSquareL.ttf'),
+        url('../font/NanumSquareL.eot'),
+        url('../font/NanumSquareL.woff');
+}
+@font-face {
+    font-family: 'NanumSquareB';
+    src: url('../font/NanumSquareB.ttf'),
+        url('../font/NanumSquareB.eot'),
+        url('../font/NanumSquareB.woff');
+}
+@font-face {
+    font-family: 'NanumSquareEB';
+    src: url('../font/NanumSquareEB.ttf'),
+        url('../font/NanumSquareEB.eot'),
+        url('../font/NanumSquareEB.woff');
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    font-size: 14px;
+}
+
+#location {
+    line-height: 50px;
+    padding-left: 5%;
+    word-spacing: 5px;
+    border-bottom: 1px solid #1c1c1b;
+}
+
+
+figure {
+    max-width: 1024px;
+    margin: 0 auto;
+    height: 500px;
+    position: relative;
+    background: url(../images/join.png) center no-repeat;
+    background-size: cover;
+}
+figure > .figure_text {
+    text-align: center;
+    color: #f9f9f9;
+    font-size: 35px;
+    font-style: italic;
+    padding-top: 220px;
+    letter-spacing: 2px;
+}
+
+
+section {
+    max-width: 1024px;
+    margin: 100px auto 0 auto;
+    position: relative;
+}
+
+
+#join_box {
+    font-family: "NanumSquare";
+    max-width: 800px;
+    margin: 0 auto 80px auto;
+    position: relative;
+}
+#join_box:before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #aaaaaa;
+    position: absolute;
+    top: 30px;
+}
+#join_box:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+#join_box > h4 {
+    font-size: 20px;
+}
+
+form {
+    max-width: 700px;
+    position: relative;
+    margin: 0 auto;
+    padding: 50px  0;
+}
+form > p > span {
+    width: 20%;
+    display: inline-block;
+    line-height: 50px;
+}
+form > p > input[type="text"] {
+    height: 35px;
+}
+form > p > input[type="password"] {
+    height: 35px;
+}
+form > p > select {
+    height: 35px;
+}
+form > p > input[type="button"] {
+    font-family: "NanumSquare";
+    height: 35px;
+    line-height: 34px;
+    padding: 0 10px;
+    background: #efeeee;
+    border: 1px solid #bbbbbb;
+}
+
+.condition {
+    width: auto;
+    font-size: 14px;
+}
+.choice {
+    width: auto;
+    height: 20px;
+    font-size: 13px;
+    padding-left: 20%;
+    line-height: 0px;
+}
+
+
+form > .join_terms {
+    margin: 50px auto 0 auto;
+    border: 1px solid #bbbbbb;
+}
+form > .join_terms > li {
+    position: relative;
+    line-height: 80px;
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 17px;
+    border-bottom: 1px solid #bbbbbb;
+}
+form > .join_terms > li:nth-child(4) {
+    border: 0;
+}
+form > .join_terms > li > input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+}
+form > .join_terms > li > span {
+    padding-left: 20px;
+}
+form > .join_terms > li > .join_down {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.on {
+    transform: rotate(180deg);
+    transition: all 0.5s;
+}
+
+form > .join_terms > li > textarea {
+    font-size: 12px;
+    position: relative;
+    z-index: 10;
+    width: 93%;
+}
+
+
+.join_btn {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    background: #1c1c1b;
+    color: #f9f9f9;
+}
+

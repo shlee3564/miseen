@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>미쟝센 > Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+           $("header").load("header.html");
+            $("footer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <header></header>
+    
+    <div id="location">
+        <a href="main.html">Home</a> > <a href="login.html"><strong>Login</strong></a>
+    </div>
+    
+    
+    <figure>
+        <div class="figure_text">
+            <h2>LOGIN</h2>
+        </div>
+    </figure>
+    
+    <section>
+        <div id="login_box">
+            <form action="#">
+                <div class="login_text">
+                    <span>아이디</span>  <input type="text" placeholder="아이디를 입력해 주세요."><br>
+                    <span>비밀번호</span>  <input type="text" placeholder="비밀번호를 입력해 주세요.">
+                </div>
+                <input type="button" value="로그인">
+                <input type="checkbox"> <span>아이디 저장</span>
+                <a href="#">아이디&amp;비밀번호 찾기</a>
+            </form>
+            <div class="login_help">
+                <span>아직 미쟝센 회원이 아니신가요 ?</span>
+                <p>아모레퍼시픽 통합멤버십(뷰티포인트)에 가입하시면 미쟝센 외 모든 브랜드 온/오프 매장에서 상품을 구매 할 때마다 현금처럼 사용할 수 있는 포인트 적립과 사용 등 다양한 혜택을 받으실 수 있습니다.</p>
+                <a href="join.html">회원가입하기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &rarr;</a>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer></footer>
+    
+    <button id="gotoTop"><img src="images/top.png" alt=""></button>
+    <button id="gotoBottom"><img src="images/bottom.png" alt=""></button>
+    
+</body>
+</html>
